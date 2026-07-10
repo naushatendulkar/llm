@@ -8,7 +8,7 @@ client = genai.Client(api_key=API_KEY)
 def ask_ai(user_input):
     response = client.models.generate_content(
         model=MODEL,
-        contents=f"{SYSTEM_PROMPT}\n\nUser: {user_input}"
+        contents=f"{SYSTEM_PROMPT}\n\n{user_input}"
     )
 
     return response.text

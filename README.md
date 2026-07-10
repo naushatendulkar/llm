@@ -8,10 +8,10 @@ A simple AI-powered text assistant built with **Python** and **Google Gemini API
 ## 🚀 Features
 
 - 💬 Ask any question
-- 📝 Summarize long text
-- 🌍 Translate text into different languages
-- 📖 Explain complex concepts in simple terms
-- 🔐 Secure API key management using `.env`
+- 📝 Summarize text
+- 🌍 Translate text
+- 📂 Summarize content from a text file
+- 📖 Explain concepts in simple language
 
 ---
 
@@ -20,14 +20,36 @@ A simple AI-powered text assistant built with **Python** and **Google Gemini API
 ```
 ai-text-assistant/
 │
-├── app.py              # Main application
-├── llm.py              # Handles Gemini API interaction
-├── prompts.py          # System prompt
-├── config.py           # Loads API key and model
-├── requirements.txt    # Project dependencies
-├── .env                # API key (not included in GitHub)
-└── README.md
+├── app.py
+├── llm.py
+├── prompts.py
+├── config.py
+├── requirements.txt
+├── .env
+├── README.md
+│
+├── utils/
+│   └── file_reader.py
+│
+└── notes.txt
 ```
+## 📂 File Summarization
+
+The application can summarize the contents of a text file.
+
+### Example
+
+Choose: 2
+
+Enter filename:
+
+notes.txt
+
+Output:
+
+• Artificial Intelligence simulates human intelligence.
+• Machine Learning is a subset of AI.
+• Deep Learning uses neural networks.
 
 ---
 
